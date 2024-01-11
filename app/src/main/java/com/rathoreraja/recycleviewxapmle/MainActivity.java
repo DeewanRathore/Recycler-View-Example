@@ -22,26 +22,27 @@ public class MainActivity extends AppCompatActivity {
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        ContactModel model1 = new ContactModel(R.drawable.cOne,"Ashish","1234556");
+        ContactModel model1 = new ContactModel(R.drawable.one,"Ashish","1234556");
         arrContacts.add(model1);
-        arrContacts.add(new ContactModel(R.drawable.cOne,"Love","123456"));
-        arrContacts.add(new ContactModel(R.drawable.cOne,"Rahul","123456"));
-        arrContacts.add(new ContactModel(R.drawable.cOne,"Kamlesh","123456"));
-        arrContacts.add(new ContactModel(R.drawable.cOne,"Raja","123456"));
-        arrContacts.add(new ContactModel(R.drawable.cOne,"nawal","123456"));
-        arrContacts.add(new ContactModel(R.drawable.cOne,"Harish","123456"));
-        arrContacts.add(new ContactModel(R.drawable.cOne,"Amrat","123456"));
-        arrContacts.add(new ContactModel(R.drawable.cOne,"Khalid","123456"));
-        arrContacts.add(new ContactModel(R.drawable.cOne,"Isaam","123456"));
-        arrContacts.add(new ContactModel(R.drawable.cOne,"Kamran","123456"));
-        arrContacts.add(new ContactModel(R.drawable.cOne,"Neelam","123456"));
-        arrContacts.add(new ContactModel(R.drawable.cOne,"Divya","123456"));
-        arrContacts.add(new ContactModel(R.drawable.cOne,"Kareena","123456"));
-        arrContacts.add(new ContactModel(R.drawable.cOne,"Karishma","123456"));
-        arrContacts.add(new ContactModel(R.drawable.cOne,"Kajol","123456"));
+        arrContacts.add(new ContactModel(R.drawable.one,"Love","123456"));
+        arrContacts.add(new ContactModel(R.drawable.one,"Rahul","123456"));
+        arrContacts.add(new ContactModel(R.drawable.one,"Kamlesh","123456"));
+        arrContacts.add(new ContactModel(R.drawable.one,"Raja","123456"));
+        arrContacts.add(new ContactModel(R.drawable.one,"nawal","123456"));
+        arrContacts.add(new ContactModel(R.drawable.one,"Harish","123456"));
+        arrContacts.add(new ContactModel(R.drawable.one,"Amrat","123456"));
+        arrContacts.add(new ContactModel(R.drawable.one,"Khalid","123456"));
+        arrContacts.add(new ContactModel(R.drawable.one,"Isaam","123456"));
+        arrContacts.add(new ContactModel(R.drawable.one,"Kamran","123456"));
+        arrContacts.add(new ContactModel(R.drawable.one,"Neelam","123456"));
+        arrContacts.add(new ContactModel(R.drawable.one,"Divya","123456"));
+        arrContacts.add(new ContactModel(R.drawable.one,"Kareena","123456"));
+        arrContacts.add(new ContactModel(R.drawable.one,"Karishma","123456"));
+        arrContacts.add(new ContactModel(R.drawable.one,"Kajol","123456"));
 
 
-        RecyclerContactAdapter adapter = new RecyclerContactAdapter();
+        RecyclerContactAdapter adapter = new RecyclerContactAdapter(this,arrContacts);
 
+        recyclerView.setAdapter(adapter);
     }
 }

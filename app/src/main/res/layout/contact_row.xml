@@ -24,7 +24,7 @@
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:background="@color/material_dynamic_neutral_variant40"
-                android:contentDescription="Contact Image"
+                android:contentDescription="@string/contact_image"
                 app:srcCompat="@drawable/cOne"/>
 
 

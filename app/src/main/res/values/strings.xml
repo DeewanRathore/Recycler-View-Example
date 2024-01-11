@@ -2,4 +2,5 @@
     <string name="app_name">Recycle Viewxapmle</string>
     <string name="contact">Contact</string>
     <string name="contact_number">Contact Number</string>
+    <string name="contact_image">Contact Image</string>
 </resources>
